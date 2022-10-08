@@ -1,0 +1,1952 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/core/HempSwapV2ERC20.sol": {
+      "lastModificationDate": 1665185585942,
+      "contentHash": "845c88788c3bc12c517bcff96f1244a7",
+      "sourceName": "contracts/core/HempSwapV2ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IHempSwapV2ERC20.sol",
+        "./libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "HempSwapV2ERC20"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/core/libraries/SafeMath.sol": {
+      "lastModificationDate": 1665185588152,
+      "contentHash": "a65356c329efeffba75210664f5df3cd",
+      "sourceName": "contracts/core/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/core/test/ERC20.sol": {
+      "lastModificationDate": 1665185587795,
+      "contentHash": "db6707bc2ef2277fe0e5400b1ecdcbbc",
+      "sourceName": "contracts/core/test/ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../HempSwapV2ERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/core/HempSwapV2Pair.sol": {
+      "lastModificationDate": 1665185586350,
+      "contentHash": "d4e9d1359adce7eec26cfcc2459359f5",
+      "sourceName": "contracts/core/HempSwapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IHempSwapV2Pair.sol",
+        "./HempSwapV2ERC20.sol",
+        "./libraries/Math.sol",
+        "./libraries/UQ112x112.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IHempSwapV2Factory.sol",
+        "./interfaces/IHempSwapV2Callee.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "HempSwapV2Pair"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/core/libraries/Math.sol": {
+      "lastModificationDate": 1665185588152,
+      "contentHash": "bee6c1959728d5d42c14151076cebd83",
+      "sourceName": "contracts/core/libraries/Math.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/core/libraries/UQ112x112.sol": {
+      "lastModificationDate": 1665185587797,
+      "contentHash": "2a703244e9f645c6fb297a983ce7c9c4",
+      "sourceName": "contracts/core/libraries/UQ112x112.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "UQ112x112"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/core/HempSwapV2Factory.sol": {
+      "lastModificationDate": 1665185585943,
+      "contentHash": "88fff6621af5143f27cfbc28e2e13a8d",
+      "sourceName": "contracts/core/HempSwapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IHempSwapV2Factory.sol",
+        "./HempSwapV2Pair.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "HempSwapV2Factory"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/Token.sol": {
+      "lastModificationDate": 1665185585223,
+      "contentHash": "34b578641b08692b48a8d8564e6a0a9c",
+      "sourceName": "contracts/Token.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20Mintable.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "Token"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol": {
+      "lastModificationDate": 1665185822790,
+      "contentHash": "a1a39233394f3c0a00ce348c61433faa",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20Detailed.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "ERC20Detailed"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1665185821995,
+      "contentHash": "22fd452b5721fdbf411ef554c2c80b76",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@openzeppelin/contracts/token/ERC20/ERC20Mintable.sol": {
+      "lastModificationDate": 1665185821619,
+      "contentHash": "6fb5e3b69c1954bc8d52981e5fa22e1b",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20Mintable.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ERC20.sol",
+        "../../access/roles/MinterRole.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "ERC20Mintable"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1665185821129,
+      "contentHash": "183ff1f5e5f04bcfa85cee597bcb0236",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@openzeppelin/contracts/GSN/Context.sol": {
+      "lastModificationDate": 1665185803733,
+      "contentHash": "32a66f6f4d0584b403f26f8e5e4d17b5",
+      "sourceName": "@openzeppelin/contracts/GSN/Context.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1665185821997,
+      "contentHash": "d208da96b6f6c1d204ee8248087cf2d7",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@openzeppelin/contracts/access/roles/MinterRole.sol": {
+      "lastModificationDate": 1665185803394,
+      "contentHash": "9061b799bcbc3fee455e0507734a1f60",
+      "sourceName": "@openzeppelin/contracts/access/roles/MinterRole.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../GSN/Context.sol",
+        "../Roles.sol"
+      ],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "MinterRole"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@openzeppelin/contracts/access/Roles.sol": {
+      "lastModificationDate": 1665185803076,
+      "contentHash": "118d44aa29245b854a8785a01af0c4e9",
+      "sourceName": "@openzeppelin/contracts/access/Roles.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.5.0"
+      ],
+      "artifacts": [
+        "Roles"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/core/interfaces/IHempSwapV2Callee.sol": {
+      "lastModificationDate": 1665185586498,
+      "contentHash": "166d0d60902b0002949f7ed1c5cf6ff4",
+      "sourceName": "contracts/core/interfaces/IHempSwapV2Callee.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHempSwapV2Callee"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/core/interfaces/IHempSwapV2Factory.sol": {
+      "lastModificationDate": 1665185586484,
+      "contentHash": "7262bafaa395f0501a5eee8de1e5c6c3",
+      "sourceName": "contracts/core/interfaces/IHempSwapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHempSwapV2Factory"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/core/interfaces/IERC20.sol": {
+      "lastModificationDate": 1665185586483,
+      "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
+      "sourceName": "contracts/core/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/core/interfaces/IHempSwapV2Pair.sol": {
+      "lastModificationDate": 1665185586742,
+      "contentHash": "49ac5cc05e2a9dae5ee361211c3e9611",
+      "sourceName": "contracts/core/interfaces/IHempSwapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHempSwapV2Pair"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/core/interfaces/IHempSwapV2ERC20.sol": {
+      "lastModificationDate": 1665185586482,
+      "contentHash": "77170382dc63eae2ed25abc7520c785d",
+      "sourceName": "contracts/core/interfaces/IHempSwapV2ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHempSwapV2ERC20"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/Multicall.sol": {
+      "lastModificationDate": 1665185585215,
+      "contentHash": "2fa6135ceebf777fa5ee1028a3ecc4be",
+      "sourceName": "contracts/Multicall.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "Multicall"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/examples/ExampleComputeLiquidityValue.sol": {
+      "lastModificationDate": 1665185588943,
+      "contentHash": "e962312d8dee454b8ad490ef092ea22e",
+      "sourceName": "contracts/periphery/examples/ExampleComputeLiquidityValue.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/HempSwapV2LiquidityMathLibrary.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleComputeLiquidityValue"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/libraries/HempSwapV2LiquidityMathLibrary.sol": {
+      "lastModificationDate": 1665185614365,
+      "contentHash": "d1667cab68b78be532ba89f8da296376",
+      "sourceName": "contracts/periphery/libraries/HempSwapV2LiquidityMathLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Pair.sol",
+        "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Factory.sol",
+        "@uniswap/lib/contracts/libraries/Babylonian.sol",
+        "@uniswap/lib/contracts/libraries/FullMath.sol",
+        "./SafeMath.sol",
+        "./HempSwapV2Library.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "HempSwapV2LiquidityMathLibrary"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@uniswap/v2-core/contracts/interfaces/IHempSwapV2Pair.sol": {
+      "lastModificationDate": 1665185916936,
+      "contentHash": "49ac5cc05e2a9dae5ee361211c3e9611",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHempSwapV2Pair"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@uniswap/v2-core/contracts/interfaces/IHempSwapV2Factory.sol": {
+      "lastModificationDate": 1665185916293,
+      "contentHash": "7262bafaa395f0501a5eee8de1e5c6c3",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHempSwapV2Factory"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@uniswap/lib/contracts/libraries/Babylonian.sol": {
+      "lastModificationDate": 1665185916294,
+      "contentHash": "3f7a9d2b13eebc20350a1cc42ed09b16",
+      "sourceName": "@uniswap/lib/contracts/libraries/Babylonian.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "Babylonian"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@uniswap/lib/contracts/libraries/FullMath.sol": {
+      "lastModificationDate": 1665185916144,
+      "contentHash": "23bbd047cedfd8027fb139fcab949cc0",
+      "sourceName": "@uniswap/lib/contracts/libraries/FullMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FullMath"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/libraries/SafeMath.sol": {
+      "lastModificationDate": 1665185588576,
+      "contentHash": "9f77127a0e2c55c2058453327e84bde3",
+      "sourceName": "contracts/periphery/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/libraries/HempSwapV2Library.sol": {
+      "lastModificationDate": 1665185614067,
+      "contentHash": "6549b36d770038358a53b3e7414d4acd",
+      "sourceName": "contracts/periphery/libraries/HempSwapV2Library.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Pair.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "HempSwapV2Library"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/examples/ExampleSwapToPrice.sol": {
+      "lastModificationDate": 1665185589088,
+      "contentHash": "37b60375eb2e8d6ed8f6386db8860541",
+      "sourceName": "contracts/periphery/examples/ExampleSwapToPrice.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Pair.sol",
+        "@uniswap/lib/contracts/libraries/Babylonian.sol",
+        "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+        "../libraries/HempSwapV2LiquidityMathLibrary.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/IHempSwapV2Router01.sol",
+        "../libraries/SafeMath.sol",
+        "../libraries/HempSwapV2Library.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleSwapToPrice"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@uniswap/lib/contracts/libraries/TransferHelper.sol": {
+      "lastModificationDate": 1665185916766,
+      "contentHash": "7fad4038612c5f040ebd746a3e58e0db",
+      "sourceName": "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/interfaces/IERC20.sol": {
+      "lastModificationDate": 1665185588575,
+      "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
+      "sourceName": "contracts/periphery/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/interfaces/IHempSwapV2Router01.sol": {
+      "lastModificationDate": 1665185614529,
+      "contentHash": "9216ba272d801039d3ee2e1d08886705",
+      "sourceName": "contracts/periphery/interfaces/IHempSwapV2Router01.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IHempSwapV2Router01"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/HempSwapV2Router02.sol": {
+      "lastModificationDate": 1665185614214,
+      "contentHash": "87dee19971a1b8e3d3d224e61c7dc002",
+      "sourceName": "contracts/periphery/HempSwapV2Router02.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Factory.sol",
+        "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+        "./interfaces/IHempSwapV2Router02.sol",
+        "./libraries/HempSwapV2Library.sol",
+        "./libraries/SafeMath.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "HempSwapV2Router02"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/interfaces/IHempSwapV2Router02.sol": {
+      "lastModificationDate": 1665185615336,
+      "contentHash": "bbe058a4607d615ff6749f2da5a6affe",
+      "sourceName": "contracts/periphery/interfaces/IHempSwapV2Router02.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IHempSwapV2Router01.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IHempSwapV2Router02"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/interfaces/IWETH.sol": {
+      "lastModificationDate": 1665185588572,
+      "contentHash": "270f2c1a1f22475259d5a2f6a524f72e",
+      "sourceName": "contracts/periphery/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/HempSwapV2Router01.sol": {
+      "lastModificationDate": 1665185615175,
+      "contentHash": "5bb227ed9d3893fd20e43e39406a4f64",
+      "sourceName": "contracts/periphery/HempSwapV2Router01.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Factory.sol",
+        "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+        "./libraries/HempSwapV2Library.sol",
+        "./interfaces/IHempSwapV2Router01.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "HempSwapV2Router01"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/HempSwapV2Migrator.sol": {
+      "lastModificationDate": 1665185615023,
+      "contentHash": "e5594cb64e67f7a7a35b2579159211f0",
+      "sourceName": "contracts/periphery/HempSwapV2Migrator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/lib/contracts/libraries/TransferHelper.sol",
+        "./interfaces/IHempSwapV2Migrator.sol",
+        "./interfaces/V1/IHempSwapV1Factory.sol",
+        "./interfaces/V1/IHempSwapV1Exchange.sol",
+        "./interfaces/IHempSwapV2Router01.sol",
+        "./interfaces/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "HempSwapV2Migrator"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/interfaces/IHempSwapV2Migrator.sol": {
+      "lastModificationDate": 1665185613909,
+      "contentHash": "026d9cf6d1781811fba5d71f7c76ebaa",
+      "sourceName": "contracts/periphery/interfaces/IHempSwapV2Migrator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHempSwapV2Migrator"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/interfaces/V1/IHempSwapV1Factory.sol": {
+      "lastModificationDate": 1665185613910,
+      "contentHash": "b0b197aba85d1658e5a8b2698f6f2c17",
+      "sourceName": "contracts/periphery/interfaces/V1/IHempSwapV1Factory.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHempSwapV1Factory"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/interfaces/V1/IHempSwapV1Exchange.sol": {
+      "lastModificationDate": 1665185615336,
+      "contentHash": "38471856c03a6eb9228af2791d20ed32",
+      "sourceName": "contracts/periphery/interfaces/V1/IHempSwapV1Exchange.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHempSwapV1Exchange"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/test/RouterEventEmitter.sol": {
+      "lastModificationDate": 1665185588943,
+      "contentHash": "096657b259f988931c379d76e8083cde",
+      "sourceName": "contracts/periphery/test/RouterEventEmitter.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IHempSwapV2Router01.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "RouterEventEmitter"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/examples/ExampleFlashSwap.sol": {
+      "lastModificationDate": 1665185588795,
+      "contentHash": "3baf2c27253603950076ac86ae948cdc",
+      "sourceName": "contracts/periphery/examples/ExampleFlashSwap.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Callee.sol",
+        "../libraries/HempSwapV2Library.sol",
+        "../interfaces/V1/IHempSwapV1Factory.sol",
+        "../interfaces/V1/IHempSwapV1Exchange.sol",
+        "../interfaces/IHempSwapV2Router01.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleFlashSwap"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@uniswap/v2-core/contracts/interfaces/IHempSwapV2Callee.sol": {
+      "lastModificationDate": 1665185916292,
+      "contentHash": "166d0d60902b0002949f7ed1c5cf6ff4",
+      "sourceName": "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Callee.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IHempSwapV2Callee"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/examples/ExampleSlidingWindowOracle.sol": {
+      "lastModificationDate": 1665185588944,
+      "contentHash": "68ec802a78a96b1b1f63a12a2acbad09",
+      "sourceName": "contracts/periphery/examples/ExampleSlidingWindowOracle.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Factory.sol",
+        "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Pair.sol",
+        "@uniswap/lib/contracts/libraries/FixedPoint.sol",
+        "../libraries/SafeMath.sol",
+        "../libraries/HempSwapV2Library.sol",
+        "../libraries/HempSwapV2OracleLibrary.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleSlidingWindowOracle"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@uniswap/lib/contracts/libraries/FixedPoint.sol": {
+      "lastModificationDate": 1665185916609,
+      "contentHash": "9c78b75695500ec38a85fea7d923fbf0",
+      "sourceName": "@uniswap/lib/contracts/libraries/FixedPoint.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./FullMath.sol",
+        "./Babylonian.sol",
+        "./BitMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FixedPoint"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/libraries/HempSwapV2OracleLibrary.sol": {
+      "lastModificationDate": 1665185615337,
+      "contentHash": "a5cef95c88220b7c4772421ff3446933",
+      "sourceName": "contracts/periphery/libraries/HempSwapV2OracleLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Pair.sol",
+        "@uniswap/lib/contracts/libraries/FixedPoint.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "HempSwapV2OracleLibrary"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/node_modules/@uniswap/lib/contracts/libraries/BitMath.sol": {
+      "lastModificationDate": 1665185916447,
+      "contentHash": "9268c1120c875c017e31caad9aa38921",
+      "sourceName": "@uniswap/lib/contracts/libraries/BitMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "BitMath"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/examples/ExampleOracleSimple.sol": {
+      "lastModificationDate": 1665185588793,
+      "contentHash": "afa5d3f46a9b600ec85b4d9fa18adb42",
+      "sourceName": "contracts/periphery/examples/ExampleOracleSimple.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Factory.sol",
+        "@uniswap/v2-core/contracts/interfaces/IHempSwapV2Pair.sol",
+        "@uniswap/lib/contracts/libraries/FixedPoint.sol",
+        "../libraries/HempSwapV2OracleLibrary.sol",
+        "../libraries/HempSwapV2Library.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleOracleSimple"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/test/ERC20.sol": {
+      "lastModificationDate": 1665185588796,
+      "contentHash": "3c84c6f456884e55b360a8450d0f0446",
+      "sourceName": "contracts/periphery/test/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/test/DeflatingERC20.sol": {
+      "lastModificationDate": 1665185588796,
+      "contentHash": "7476ba791f9afb6f870f10560972e0a0",
+      "sourceName": "contracts/periphery/test/DeflatingERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "DeflatingERC20"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/periphery/test/WETH9.sol": {
+      "lastModificationDate": 1665185589087,
+      "contentHash": "c60afbcd54ec9da3b3908e2db56c0d12",
+      "sourceName": "contracts/periphery/test/WETH9.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "WETH9"
+      ]
+    },
+    "/mnt/c/Users/tobib/Dropbox/moonbeam-uniswap/uniswap-contracts-moonbeam/contracts/WCANTO.sol": {
+      "lastModificationDate": 1665260962222,
+      "contentHash": "162688bc659dab7612d7a19dfb807eca",
+      "sourceName": "contracts/WCANTO.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "WCANTO"
+      ]
+    }
+  }
+}
